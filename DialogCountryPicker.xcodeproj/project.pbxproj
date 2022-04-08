@@ -11,6 +11,14 @@
 		2F3BA68A27FFD6DA0068DD68 /* DialogCountryPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3BA67F27FFD6DA0068DD68 /* DialogCountryPicker.framework */; };
 		2F3BA68F27FFD6DA0068DD68 /* DialogCountryPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3BA68E27FFD6DA0068DD68 /* DialogCountryPickerTests.swift */; };
 		2F3BA69027FFD6DA0068DD68 /* DialogCountryPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F3BA68227FFD6DA0068DD68 /* DialogCountryPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F845C8927FFD78000047111 /* CountryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F845C8427FFD78000047111 /* CountryPickerView.swift */; };
+		2F845C8A27FFD78000047111 /* CountryPickerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F845C8527FFD78000047111 /* CountryPickerItem.swift */; };
+		2F845C8B27FFD78000047111 /* CountryPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F845C8627FFD78000047111 /* CountryPickerViewModel.swift */; };
+		2F845C8C27FFD78000047111 /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F845C8727FFD78000047111 /* CountryTableViewCell.swift */; };
+		2F845C8D27FFD78000047111 /* CountryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F845C8827FFD78000047111 /* CountryPickerViewController.swift */; };
+		2F845C9127FFD78C00047111 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F845C8F27FFD78C00047111 /* UIFont+Extension.swift */; };
+		2F845C9227FFD78C00047111 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F845C9027FFD78C00047111 /* UIColor+Extension.swift */; };
+		2F845C9427FFD86700047111 /* DialogCountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F845C9327FFD86700047111 /* DialogCountryPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +37,14 @@
 		2F3BA68327FFD6DA0068DD68 /* DialogCountryPicker.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = DialogCountryPicker.docc; sourceTree = "<group>"; };
 		2F3BA68927FFD6DA0068DD68 /* DialogCountryPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DialogCountryPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F3BA68E27FFD6DA0068DD68 /* DialogCountryPickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogCountryPickerTests.swift; sourceTree = "<group>"; };
+		2F845C8427FFD78000047111 /* CountryPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryPickerView.swift; sourceTree = "<group>"; };
+		2F845C8527FFD78000047111 /* CountryPickerItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryPickerItem.swift; sourceTree = "<group>"; };
+		2F845C8627FFD78000047111 /* CountryPickerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryPickerViewModel.swift; sourceTree = "<group>"; };
+		2F845C8727FFD78000047111 /* CountryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
+		2F845C8827FFD78000047111 /* CountryPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryPickerViewController.swift; sourceTree = "<group>"; };
+		2F845C8F27FFD78C00047111 /* UIFont+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		2F845C9027FFD78C00047111 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		2F845C9327FFD86700047111 /* DialogCountryPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogCountryPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +87,10 @@
 		2F3BA68127FFD6DA0068DD68 /* DialogCountryPicker */ = {
 			isa = PBXGroup;
 			children = (
+				2F845C8E27FFD78C00047111 /* Extensions */,
+				2F845C8327FFD78000047111 /* CountryPicker */,
 				2F3BA68227FFD6DA0068DD68 /* DialogCountryPicker.h */,
+				2F845C9327FFD86700047111 /* DialogCountryPicker.swift */,
 				2F3BA68327FFD6DA0068DD68 /* DialogCountryPicker.docc */,
 			);
 			path = DialogCountryPicker;
@@ -83,6 +102,27 @@
 				2F3BA68E27FFD6DA0068DD68 /* DialogCountryPickerTests.swift */,
 			);
 			path = DialogCountryPickerTests;
+			sourceTree = "<group>";
+		};
+		2F845C8327FFD78000047111 /* CountryPicker */ = {
+			isa = PBXGroup;
+			children = (
+				2F845C8427FFD78000047111 /* CountryPickerView.swift */,
+				2F845C8527FFD78000047111 /* CountryPickerItem.swift */,
+				2F845C8627FFD78000047111 /* CountryPickerViewModel.swift */,
+				2F845C8727FFD78000047111 /* CountryTableViewCell.swift */,
+				2F845C8827FFD78000047111 /* CountryPickerViewController.swift */,
+			);
+			path = CountryPicker;
+			sourceTree = "<group>";
+		};
+		2F845C8E27FFD78C00047111 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2F845C8F27FFD78C00047111 /* UIFont+Extension.swift */,
+				2F845C9027FFD78C00047111 /* UIColor+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +234,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F845C9127FFD78C00047111 /* UIFont+Extension.swift in Sources */,
 				2F3BA68427FFD6DA0068DD68 /* DialogCountryPicker.docc in Sources */,
+				2F845C8B27FFD78000047111 /* CountryPickerViewModel.swift in Sources */,
+				2F845C8A27FFD78000047111 /* CountryPickerItem.swift in Sources */,
+				2F845C8927FFD78000047111 /* CountryPickerView.swift in Sources */,
+				2F845C8C27FFD78000047111 /* CountryTableViewCell.swift in Sources */,
+				2F845C8D27FFD78000047111 /* CountryPickerViewController.swift in Sources */,
+				2F845C9427FFD86700047111 /* DialogCountryPicker.swift in Sources */,
+				2F845C9227FFD78C00047111 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +446,7 @@
 		2F3BA69727FFD6DA0068DD68 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V7CT99HH5C;
@@ -419,6 +468,7 @@
 		2F3BA69827FFD6DA0068DD68 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V7CT99HH5C;

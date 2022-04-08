@@ -1,10 +1,3 @@
-//
-//  DialogCountryPicker.h
-//  DialogCountryPicker
-//
-//  Created by Tonte Owuso on 08/04/2022.
-//
-
 #import <Foundation/Foundation.h>
 
 //! Project version number for DialogCountryPicker.
