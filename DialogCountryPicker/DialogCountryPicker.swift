@@ -3,8 +3,7 @@ import UIKit
 
 open class DialogCountryPicker{
 
-    public init() {
-    }
+    public init() {}
 
     public func show(
         filteredCountries: [String] = [],
